@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dummy Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css" integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #fefefe;
+      }
+
+      .centered {
+        width: 100%;
+        max-width: 430px;
+        font-weight: 400;
+        padding: 15px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="centered">
+      <h2 class="h3 mb-3 fw-normal">Random Number Generator</h2>
+      <form method="GET" action="/random">
+          <div class="row">
+            <div class="form-floating col-sm">
+                <input type="number" name="from" id="from" class="form-control" value=1>
+                <label for="from">From</label>
+            </div>
+            <div class="form-floating col-sm">
+                <input type="number" name="to" id="to" class="form-control" value=10>
+                <label for="to">To</label>
+            </div>
+          </div>
+        <div class="mb-3"></div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Give it a go!!</button>
+      </form>
+    </main>
+  </body>
+</html>
